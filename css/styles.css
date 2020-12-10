@@ -10118,7 +10118,7 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
-header.masthead {
+.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -10140,7 +10140,7 @@ header.masthead2 {
   background-position: center center;
   background-size: cover;
 }
-header.masthead .masthead-subheading {
+.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
@@ -10149,7 +10149,7 @@ header.masthead .masthead-subheading {
   text-shadow: 1px 1px 1px rgba(0,0,0, 1);
 }
 /*mobile*/
-header.masthead .masthead-heading {
+.masthead .masthead-heading {
   font-size: 36px;
   font-weight: 700;
   line-height: 2rem;
@@ -10162,23 +10162,23 @@ header.masthead .masthead-heading {
   text-shadow: 1px 1px 4px rgba(0,0,0,1);
 }
 @media (min-width: 768px) {
-  header.masthead {
+  .masthead {
     padding-top: 17rem;
     padding-bottom: 15.5rem;
   }
-  header.masthead .masthead-subheading {
+  .masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 1px rgba(0,0,0, 1);
   }
-  header.masthead .masthead-heading {
+  .masthead .masthead-heading {
     font-size: 72px;
     font-weight: 700;
     line-height: 2rem;
     margin-bottom: 4rem;
-    text-shadow: 1px 1px 5px rgba(0,0,0, 2);
+    text-shadow: 1px 1px 5px rgba(0,0,0, 20);
   }
 }
 #portfolio .portfolio-item {
@@ -10504,4 +10504,63 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+#intro .carousel-fade {
+  overflow: hidden;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item {
+  transition-property: opacity;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#intro .carousel-fade .carousel-inner .active,
+#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item-next,
+#intro .carousel-fade .carousel-inner .carousel-item-prev,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#intro .carousel-control-prev, #intro .carousel-control-next {
+  width: 10%;
+}
+
+
+
+#intro .carousel-indicators li {
+  cursor: pointer;
+}
+
+#intro .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #18d26e;
+}
+
+#intro .btn-get-started:hover {
+  background: #fff;
+  color: #18d26e;
 }
