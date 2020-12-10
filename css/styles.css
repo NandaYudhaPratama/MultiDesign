@@ -10171,14 +10171,17 @@ header.masthead2 {
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 1px rgba(0,0,0, 1);
+    text-shadow: 1px 1px 1px rgba(0,0,0, 5);
   }
   .masthead .masthead-heading {
     font-size: 72px;
     font-weight: 700;
     line-height: 2rem;
     margin-bottom: 4rem;
-    text-shadow: 1px 1px 5px rgba(0,0,0, 20);
+    text-shadow: 1px 1px 5px rgba(0,0,0, 5);
+  }
+  .margin-atas{
+    margin-top: -145px;
   }
 }
 #portfolio .portfolio-item {
