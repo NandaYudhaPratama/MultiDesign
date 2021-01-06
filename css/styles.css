@@ -10570,7 +10570,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .animate-bottom {
   position: relative;
-  animation: animatebottom 0.4s;
+  animation: animatebottom 1s;
 }
 
 @keyframes animatebottom {
